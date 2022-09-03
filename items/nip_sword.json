@@ -1,0 +1,96 @@
+{
+    "format_version": "1.19.21",
+    "minecraft:item": {
+      "description": {
+        "category": "equipment",
+        "identifier": "nip:nip_sword"
+      },
+      "components": {
+        "minecraft:icon": {
+          "texture": "nip_sword"
+        },
+        "minecraft:creative_category": {
+          "parent": "itemGroup.name.sword"
+         },
+           "minecraft:display_name":{
+              "value":"Epée de la mort qui tue"
+        },
+        "minecraft:max_stack_size": 1,
+        "minecraft:hand_equipped": true,
+        "minecraft:allow_off_hand": true,
+        "minecraft:foil": true,
+        "minecraft:durability": {
+          "max_durability": 600000,
+          "damage_chance": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "minecraft:repairable": {
+          "repair_items": [
+            {
+              "items": [
+                "wood"
+              ],
+              "repair_amount": 20
+            },
+            {
+              "items": [
+                "nip:nip_sword"
+              ],
+              "repair_amount": "context.other->query.remaining_durability + 0.2 * context.other->query.max_durability"
+            }
+          ]
+        },
+        "minecraft:mining_speed": 150,
+        "minecraft:damage": 100000,
+        "minecraft:enchantable": {
+          "value": 15,
+          "slot": "sword"
+        },
+        "minecraft:can_destroy_in_creative": true,
+        "minecraft:weapon": {},
+        "minecraft:on_use": {},
+        "minecraft:render_offsets": {
+          "main_hand": {
+            "third_person": {
+              "scale": [
+                0.1,
+                0.1,
+                0.1
+              ]
+            },
+            "first_person": {
+              "scale": [
+                0.037999999999977205,
+                0.037999999999977205,
+                0.037999999999977205
+              ]
+            }
+          },
+          "off_hand": {
+            "third_person": {
+              "scale": [
+                0.1,
+                0.1,
+                0.1
+              ]
+            },
+            "first_person": {
+              "scale": [
+                0.037999999999977205,
+                0.037999999999977205,
+                0.037999999999977205
+              ]
+            }
+          }
+        },
+        "tag:minecraft:is_sword": {},
+        "minecraft:cooldown": {
+          "category": "action_cooldown",
+          "duration": 1
+        }
+      }
+    }
+  }
+  
